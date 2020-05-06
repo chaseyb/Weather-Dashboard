@@ -10,35 +10,57 @@
 
     <!-- CSS Styling -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <title>Weather Dashboard</title>
-
-</head>
-<body>
-
-    <!-- Navbar -->
-        <nav class="navbar navbar-light bg-dark">
-          <a class="navbar-brand text-white">Weather Dashboard</a>
-        </nav>
     
-    <!-- Page Spacing -->
-    <br>
+    <!-- Navbar -->
+    <body>
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
 
     <!-- City Search -->
-    <div class="container-fluid"> 
-        <div class="row"> 
-            <div class="col-lg-3 bg-light pt-3 pb-3"><h5>Search for a city:</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 searchColumn">
+                <form>
+                    <h3>Search for a City:</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+                        <div class="input-group-append">
+                        <button type="submit" id="submitCity" class="btn btn-primary fa fa-search"></button>
+                    </div>
+                </div>
+            </form>
+    
+    <!-- Previous Search -->
+    <div id="previousSearch" class="btn-group-vertical">
+    </div>
+    </div>
+    
+     <!-- Clear All Text Button -->
+    
 
-    <!-- Start input group -->
-        <div class="input-group mb-3"> 
-            <input id="searchTerm" type="text" class="form-control" placeholder="Type a city here" class="input-group-append">
-            <button id="searchBtn" class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+    <!-- Current Weather info -->
+    <div class="col-md-9">
+        <div id="currentWeather">
+            <h2>Current Weather Here</h2>
         </div>
+    <div>
+    
+    <!-- 5 Day Forecast Display -->
+    <h3>5-Day Forecast:</h3>
+        <div class="row" id="weatherForecast">
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
     <!-- moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
 </body>
 </html>
