@@ -4,7 +4,8 @@ A simple weather dashboard application, that shows you the current weather and 5
 
 # Screenshot of application
 
-![]images/filename/weatherapplication.png
+<img src="assets/images/weatherapplication.png width"100">
+
 
 # Built With
 
