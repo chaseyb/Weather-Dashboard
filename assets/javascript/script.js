@@ -31,6 +31,11 @@ if (localStorage.getItem("localWeatherSearches")) {
     citiesArray = [];
 };
 
+// Clear Local Storage 
+$("#clear").click(function() {
+    localStorage.clear('localWeatherSearches');
+});
+
 // Call API for current weather by city name 
 function returnCurrentWeather(cityName) {
     let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&APPID=${apiKey}`;
