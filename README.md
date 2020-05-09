@@ -1,6 +1,6 @@
 # Weather-Dashboard
 
-A simple weather dashboard application, that shows you the current weather and 5 day forecast of whatever city the user inputs.
+A simple weather dashboard application, that shows you the current weather and 5 day forecast of a city the user searches.
 
 # Screenshot of application
 
